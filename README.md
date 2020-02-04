@@ -13,6 +13,6 @@ Did you ever want to split a password into pieces so that no single piece is eno
 # Usage
 Just start the script with `python3 ec-password.py`. It will ask you for all the details. It allows you to encode and decocde passwords.
 
-If you're doing this for a very important secret, consider running this script from a live Linux.
+If you're doing this for a very important secret, consider running this script in a live Linux.
 
 ![Example](example.png)
