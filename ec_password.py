@@ -19,11 +19,11 @@ def create_output(messages):
 
     i = 1
     for message in messages:
-        print("Word {}".format(i))
+        print("Chunk {}".format(i))
         print("    {}".format(message.decode('utf-8')))
         if print_qr:
             qrcode.make(message).save("chunk-{}.png".format(i))
-            print("    Created chunk-{}.png".format(i))
+            print("    Created QR code chunk-{}.png".format(i))
         i = i + 1
 
 
