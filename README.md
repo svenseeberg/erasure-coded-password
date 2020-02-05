@@ -4,6 +4,10 @@ This helper script splits a message (i.e. password) into `k` data chunks that ca
 # Why?
 Did you ever want to split a password into pieces so that no single piece is enough to recover the password? Then this script is for you. If you want to print them to paper, QR codes make your life easier.
 
+# Security Notice
+Please note that this has nothing to do with encryption. Each chunk contains a plain text part of the password/message. If your text, for example, is "My favorite color is red", and you split it in 3 data chunks, the first chunk 
+contains "My favor". Also contained is the overall length of the message. This would make it pretty easy to guess the full text. Therefore, only use randomized strings.
+
 # Installation
 
 1. `python3 -m venv .venv`
