@@ -8,15 +8,20 @@ Did you ever want to split a password into pieces so that no single piece is eno
 Please note that this has nothing to do with encryption. Each chunk contains a plain text part of the password/message. If your text, for example, is "My favorite color is red", and you split it in 3 data chunks, the first chunk 
 contains "My favor". Also contained is the overall length of the message. This would make it pretty easy to guess the full text. Therefore, only use randomized strings.
 
+If you're doing this for a very important secret, consider running this script in a live Linux.
+
 # Installation
 
-1. `python3 -m venv .venv`
-2. `source .venv/bin/activate`
-3. `pip3 install Pillow-PIL qrcode pyeclib`
+1. `git clone https://github.com/svenseeberg/erasure-coded-password.git`
+2. `cd erasure-coded-password`
+3. `python3 -m venv .venv`
+4. `source .venv/bin/activate`
+5. `pip3 install Pillow-PIL qrcode pyeclib`
 
 # Usage
-Just start the script with `python3 ec-password.py`. It will ask you for all the details. It allows you to encode and decocde passwords.
-
-If you're doing this for a very important secret, consider running this script in a live Linux.
+1. `cd [/path/to/]erasure-coded-password`
+2. `source .venv/bin/activate`
+3. `python3 ec-password.py`
+The script has no parameters, it asks for all the input while it runs.
 
 ![Example](example.png)
