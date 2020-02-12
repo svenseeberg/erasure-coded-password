@@ -16,7 +16,8 @@ If you're doing this for a very important secret, consider running this script i
 2. `cd erasure-coded-password`
 3. `python3 -m venv .venv`
 4. `source .venv/bin/activate`
-5. `pip3 install Pillow-PIL qrcode pyeclib`
+5. Install the `liberasurecode` development package. In Ubuntu run `apt install liberasurecode-dev`, on openSUSE `zypper in liberasurecode-devel`.
+6. `pip3 install Pillow-PIL qrcode pyeclib`
 
 # Usage
 1. `cd [/path/to/]erasure-coded-password`
