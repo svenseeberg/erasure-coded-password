@@ -8,7 +8,7 @@ Did you ever want to split a password into pieces so that no single piece is eno
 Please note that this has nothing to do with encryption. Each chunk contains a plain text part of the password/message. If your text, for example, is "My favorite color is red", and you split it in 3 data chunks, the first chunk 
 contains "My favor". Also contained is the overall length of the message. This would make it pretty easy to guess the full text. Therefore, only use randomized strings.
 
-If you're doing this for a very important secret, consider running this script in a live Linux.
+If you're doing this for a very important secret, ~consider running this script in a live Linux~ use `ssss`.
 
 # Installation
 
